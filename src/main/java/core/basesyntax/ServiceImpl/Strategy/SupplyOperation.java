@@ -3,7 +3,7 @@ package core.basesyntax.ServiceImpl.Strategy;
 import core.basesyntax.Model.FruitTransaction;
 import core.basesyntax.db.Storage;
 
-public class SupplyOperation implements OperationHandler{
+public class SupplyOperation implements OperationHandler {
 
     @Override
     public void apply(FruitTransaction transaction) {

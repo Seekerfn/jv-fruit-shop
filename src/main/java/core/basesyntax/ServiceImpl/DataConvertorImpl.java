@@ -1,10 +1,9 @@
 package core.basesyntax.ServiceImpl;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import core.basesyntax.Model.FruitTransaction;
 import core.basesyntax.Service.DataConvertor;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DataConvertorImpl implements DataConvertor {
 

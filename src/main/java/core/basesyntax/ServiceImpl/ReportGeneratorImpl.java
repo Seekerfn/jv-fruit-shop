@@ -1,10 +1,11 @@
 package core.basesyntax.ServiceImpl;
 
-import java.util.Map;
 import core.basesyntax.db.Storage;
 import core.basesyntax.Service.ReportGenerator;
+import java.util.Map;
 
 public class ReportGeneratorImpl implements ReportGenerator {
+
     private static final String HEADER = "fruit,quantity" + System.lineSeparator();
 
     @Override
