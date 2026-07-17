@@ -1,4 +1,4 @@
-package core.basesyntax.serviceimpl;
+package core.basesyntax.service.impl;
 
 import core.basesyntax.dao.FileReader;
 import java.io.BufferedReader;
@@ -9,6 +9,9 @@ public class FileReaderImpl implements FileReader {
 
     @Override
     public List<String> read(String fileName) {
+        if (fileName == null) {
+            throw new RuntimeException("File is empty");
+        }
         try (BufferedReader reader = new BufferedReader(new java.io.FileReader(fileName))) {
             List<String> lines = new ArrayList<>();
             String line;

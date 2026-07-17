@@ -1,4 +1,4 @@
-package core.basesyntax.serviceimpl;
+package core.basesyntax.service.impl;
 
 import core.basesyntax.model.FruitTransaction;
 import core.basesyntax.service.DataConvertor;
@@ -9,13 +9,15 @@ public class DataConvertorImpl implements DataConvertor {
 
     @Override
     public List<FruitTransaction> convertToTransaction(List<String> list) {
+        if (list == null) {
+            throw new RuntimeException("List can not be null");
+        }
         List<FruitTransaction> fruitList = new ArrayList<>();
         for (String item : list) {
             String[] items = item.split(",");
             if (items[0].equals("type")) {
                 continue;
             }
-            // Fixed: Split the long line across multiple lines
             fruitList.add(new FruitTransaction(
                     FruitTransaction.Operation.getOperationByCode(items[0]),
                     items[1],

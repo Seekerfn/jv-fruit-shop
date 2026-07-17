@@ -1,5 +1,4 @@
-package core.basesyntax.serviceimpl;
-
+package core.basesyntax.service.impl;
 import core.basesyntax.db.Storage;
 import core.basesyntax.service.ReportGenerator;
 import java.util.Map;
@@ -7,7 +6,6 @@ import java.util.Map;
 public class ReportGeneratorImpl implements ReportGenerator {
 
     private static final String HEADER = "fruit,quantity" + System.lineSeparator();
-
     @Override
     public String getReport() {
         StringBuilder builder = new StringBuilder();
