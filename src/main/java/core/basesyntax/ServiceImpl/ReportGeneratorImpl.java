@@ -4,7 +4,6 @@ import core.basesyntax.db.Storage;
 import core.basesyntax.service.ReportGenerator;
 import java.util.Map;
 
-
 public class ReportGeneratorImpl implements ReportGenerator {
 
     private static final String HEADER = "fruit,quantity" + System.lineSeparator();

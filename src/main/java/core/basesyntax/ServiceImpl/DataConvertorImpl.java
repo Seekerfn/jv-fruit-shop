@@ -15,8 +15,12 @@ public class DataConvertorImpl implements DataConvertor {
             if (items[0].equals("type")) {
                 continue;
             }
-            fruitList.add(new FruitTransaction(FruitTransaction.Operation.getOperationByCode(items[0]), items[1], Integer.parseInt(items[2])));
-
+            // Fixed: Split the long line across multiple lines
+            fruitList.add(new FruitTransaction(
+                    FruitTransaction.Operation.getOperationByCode(items[0]),
+                    items[1],
+                    Integer.parseInt(items[2])
+            ));
         }
         return fruitList;
     }
