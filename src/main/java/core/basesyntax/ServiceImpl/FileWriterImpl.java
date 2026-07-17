@@ -1,8 +1,9 @@
-package core.basesyntax.ServiceImpl;
+package core.basesyntax.serviceimpl;
 
+import core.basesyntax.dao.FileWriter;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import core.basesyntax.dao.FileWriter;
+
 
 public class FileWriterImpl implements FileWriter {
 

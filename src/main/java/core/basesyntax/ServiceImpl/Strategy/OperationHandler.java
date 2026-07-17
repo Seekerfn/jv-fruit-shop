@@ -1,6 +1,6 @@
-package core.basesyntax.ServiceImpl.Strategy;
+package core.basesyntax.serviceimpl.strategy;
 
-import core.basesyntax.Model.FruitTransaction;
+import core.basesyntax.model.FruitTransaction;
 
 public interface OperationHandler {
 

@@ -1,4 +1,4 @@
-package core.basesyntax.ServiceImpl;
+package core.basesyntax.serviceimpl;
 
 import core.basesyntax.dao.FileReader;
 import java.io.BufferedReader;
